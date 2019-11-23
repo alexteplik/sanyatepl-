@@ -1,0 +1,142 @@
+*{margin:0;padding:0;outline: none;}
+body{
+  background:linear-gradient(to bottom right, #6979c7, #c8a5d1 );
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+#rovno{
+  width: 1000px;
+  height:1400px;
+  margin:25px auto;
+}
+.b3radius{
+  border-radius: 10px;
+}
+#header{
+  margin-top:25px;
+  height:36px;
+  border-bottom:solid 3px #c3d0dd;
+  background:#FFF;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 1px 1px 3px #DDD;
+}
+#side{
+  border-right:solid 3px chartreuse;
+  float:left;
+  height: 1000px;
+  border-top:solid 5px #dce5ee;
+  border-left:solid 5px #dce5ee;
+  width: 225px;
+  background-color: #dce5ee;
+  box-shadow: 1px 1px 3px #DDD;
+  border-bottom-left-radius: 20px;
+}
+.clr{
+  clear: both;
+}
+#content{
+  float: right;
+  text-align: start;
+  height:1000px;
+  width: 762px;
+  border-left:solid 5px #FFF;
+  border-top:solid 5px #FFF;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 3px #DDD;
+  border-bottom-right-radius: 20px;
+}
+#header ul{
+  margin:0;
+  padding:0;
+  display: flex; 
+}
+#header ul li{
+  list-style: none;
+  margin:5px auto;
+  transition: 0.3s;
+}
+#header ul li a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding:5px;
+  font-size:18px;
+  font-family:sans-serif;
+  color:silver;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#header ul:hover li a{
+  transform:scale(1.5);
+  opacity: .1;
+  filter:blur(5px);
+}
+#header ul li a:hover{
+  transform:scale(1.5);
+  opacity: 1;
+  filter:blur(0px);
+}
+#header ul li a:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: #49ffe7;
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+#header ul li a:hover:before{
+  transform-origin: transform left;
+  transform: scaleX(1);
+  z-index: -1;
+}
+#niz{
+  height: 200px;
+  width: 988px;
+  background-color: whitesmoke;
+  border-right: whitesmoke 2px solid;
+  border-left:whitesmoke 2px solid;
+  border-radius: 20px;
+  margin-top:1025px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:2px 2px 2px whitesmoke;
+  padding:5px;
+}
+.head{
+  width:900px;
+  height: 80px;
+  margin:auto;
+  margin-left: 50px;
+}
+.icon{
+  float:left;
+  opacity:.5;
+}
+.icon:hover{
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+  transition: 0.2s;
+}
+.button{
+  float:right;
+  margin-top: 18px;
+  border:10px solid white;
+  background: white;
+  border-radius: 23px;
+  color:silver;
+  opacity: .5;
+}
+.button:hover{
+  transition: 1s;
+  opacity:1;
+}
